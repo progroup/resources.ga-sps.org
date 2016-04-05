@@ -30,13 +30,6 @@
                     </div>
                     <img class="slide-logo" src="/assets/images/hearts.png" style="height: 100px">
                 </div>
-                <div class="slide slide-4">
-                    <div class="slide-bio">
-                        <h4>Krystal Lokkesmoe, Propectus Group</h4>
-                        <h5>Workforce Development Coordinator</h5>
-                    </div>
-                    <img class="slide-logo" src="/assets/images/prospectus.png" style="height:55px">
-                </div>
                 <div class="slide slide-6">
                     <div class="slide-bio">
                         <h4>Molly Vance, GUIDE Inc</h4>
