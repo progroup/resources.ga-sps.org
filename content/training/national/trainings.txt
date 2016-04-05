@@ -1,0 +1,61 @@
+Title: National Training
+
+----
+
+Trainings: 
+
+- 
+  date: 'Monday, March 28 - Friday, April 1, 2016'
+  modality: Webinar / Self-Paced
+  training: "What is the SPF?  An Introduction to SAMHSA's Strategic Prevention Framework"
+  description: |
+    Audience
+    Strategic Prevention Framework sub-recipients, prevention providers, and prevention coalition partners
+    
+    Description
+    This interactive, self-paced course offers practitioners new to the field of prevention a "just in time" opportunity to learn about the Strategic Prevention Framework (SPF)---- SAMHSA's five-step, data-driven planning process. Using a case-based approach, What is the SPF? engages practitioners in each step of the model, following five communities as they work to assess local needs, build capacity to address prevention priorities, plan prevention activities, implement evidence-based strategies, and evaluate their prevention efforts.
+    
+    How Long Does this Course Take to Complete?
+    This course will take approximately four hours to complete, though timing will vary depending on participants' familiarity with the content, learning style, and competing demands on your time.
+    
+    Accreditation
+    This course has been endorsed by the International Certification and Reciprocity Consortium (IC&RC). Individuals who receive a passing grade on the course self-assessment (80% correct) will receive a certificate for four hours of participation.
+  logistics: |
+    Questions?
+    Please contact Clara McCurdy-Kirlis (CMcCurdy-Kirlis@edc.org) for technical issues and Lourdes Vazquez (LVazquez@edc.org) with content-related questions.
+    
+    Please register here by March 23, 2016.
+    http://tinyurl.com/zw85dyx
+  ceus: 'true'
+  archived: 'false'
+- 
+  date: 'Monday, April 11 - Friday, April 22, 2016'
+  modality: Moderated Online Course
+  training: 'Ethics in Prevention  A Guide For Substance Abuse Prevention Practitioners'
+  description: |
+    Dates
+    Date: Monday, April 11 - Friday, April 22, 2016
+    
+    Audience
+    State- and local-level substance abuse prevention practitioners
+    
+    Description
+    This moderated online course addresses the role and application of ethics in substance abuse prevention. Using cases and interactive activities, participants will explore the six standards in the Prevention Code of Ethics and learn to use a 4-step decision-making process to assess, address, and evaluate a range of ethical issues. In addition, five discussion forums, facilitated by an experienced course moderator, provide opportunities for participants to apply lessons learned.
+    
+    What Does Participation Entail?
+    Logging on to the course Web site at least once a day, at your convenience
+    Reviewing course materials
+    Completing online activities designed to help you apply what you have learned
+    Participating in moderated, Web-based discussions (i.e., responding to discussion questions, reviewing the responses of fellow participants, and responding to at least one of their comments)
+    
+    Accreditation
+    This course has been endorsed by the International Certification and Reciprocity Consortium (IC&RC). Individuals who receive a passing grade on the course self-assessment (80% correct) and participate fully in the online discussion forum will receive a certificate for six hours of participation.
+  logistics: |
+    Questions?
+    Please contact Clara McCurdy-Kirlis (CMcCurdy-Kirlis@edc.org) for technical issues and Lourdes Vazquez (LVazquez@edc.org) with content-related questions.
+    
+    Registration
+    Please register by April 6th, 2016 here.
+    http://tinyurl.com/gnu5uu7
+  ceus: 'true'
+  archived: 'false'

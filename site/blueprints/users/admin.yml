@@ -1,0 +1,13 @@
+fields:
+  twitter:
+    label: Twitter
+    type: text
+    placeholder: @username
+    icon: twitter
+    width: 1/2
+  github:
+    label: Github
+    type: text
+    placeholder: Github username
+    icon: github
+    width: 1/2
