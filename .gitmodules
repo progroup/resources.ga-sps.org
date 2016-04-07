@@ -4,3 +4,6 @@
 [submodule "panel"]
 	path = panel
 	url = https://github.com/getkirby/panel.git
+[submodule "site/plugins/classymarkdown"]
+	path = site/plugins/classymarkdown
+	url = https://github.com/fabianmichael/kirby-classymarkdown.git

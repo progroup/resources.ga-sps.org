@@ -37,6 +37,7 @@
 <?php echo css('/assets/css/chosen.css') ?>
 
 <?php include_once('ecco/config.php');
+session_start();
 error_reporting(0);
 #-------Report insert-----------
 if(isset($_POST['tta_reports'])){
@@ -53,6 +54,7 @@ if(isset($_POST['tta_reports'])){
         $UploadFolderName = "";
         $UploadFileName = "";
     }
+	
    $agency_id= $_POST['report_agency'];
     $SQL = "INSERT INTO TTA_Reports_uploads
     (agency, fname, lname, position, emailid, contact_no, report_note, uploadfoldername, uploadfilename,uploaduser)
