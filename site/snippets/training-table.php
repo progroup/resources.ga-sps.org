@@ -10,11 +10,12 @@
         <?php foreach($page->children() as $subpage) : ?>
             <div role="tabpanel" class="tab-pane <?php echo ($index == 1) ? 'active' : '' ?>" id="<?php echo $subpage->uid() ?>">
                 <?php foreach($subpage->trainings()->toStructure() as $training) : ?>
+                    <div class="table-responsive">
                     <table class="training-table">
                         <caption></caption>
                         <thead>
                             <tr>
-                                <th class="training-table-date">Date</th>
+                                <th class="training-table-date">Dates</th>
                                 <th class="training-table-training" colspan="2">Training</th>
                                 <th class="training-table-modality">Modality</th>
                                 <th class="training-table-ceus">CEUs</th>
@@ -24,7 +25,7 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <?php echo $training->date()->html() ?>
+                                    <?php echo $training->dates()->html() ?>
                                 </td>
                                 <td colspan="2">
                                     <?php echo $training->training()->html() ?>
@@ -35,7 +36,7 @@
                                 <td class="training-table-ceus">
                                     <?php
                                         if ($training->ceus()) {
-                                            echo "Yes";
+                                            echo $training->ceus()->html();
                                         } else {
                                             echo "N/A";
                                         }
@@ -43,12 +44,7 @@
                                     ?>
                                 </td>
                                 <td class="training-table-archived">
-
-                                    <?php
-                                        if($training->archived()) {
-                                            echo "Yes";
-                                        }
-                                    ?>
+                                    <?php echo $training->archived()->html() ?>
                                 </td>
                             </tr>
                             <tr>
@@ -67,6 +63,7 @@
                             </tr>
                         </tbody>
                     </table>
+                    </div>
                 <?php endforeach ?>
             </div>
             <?php $index++ ?>

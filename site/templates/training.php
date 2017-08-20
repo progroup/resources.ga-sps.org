@@ -8,6 +8,8 @@
       </div>
       <?= $page->text()->kirbytext() ?>
       <? snippet('training-table') ?>
+
+
     </div>
     <div class="col-md-3 col-md-pull-9">
       <? snippet('sidebar') ?>

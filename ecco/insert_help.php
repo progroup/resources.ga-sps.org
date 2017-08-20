@@ -56,7 +56,7 @@ else if(isset($_POST['email'])){
 	while($row = mysql_fetch_array($result_mail)) {
 		$user_level = $row['user_level'];
 		$list = unserialize($user_level);
-		if($list[0] == 1 || $list[0] == 2) {
+		if($list[0] == 1) {
 			$get_email[] = $row['email'];
 		}
 	}
@@ -222,17 +222,14 @@ unset($_SESSION['AttachmentUpload']);
 	function information_mail_admin($email, $user_name, $agency, $time, $requester, $position, $region, $cnt_no, $query, $regarding, $regarding_notes, $email_bcc) {
 
     $img_path = "http://www." . $_SERVER["SERVER_NAME"] . "/assets/images/logo-gasps.png";
-        $progroup_img_path = "http://www." . $_SERVER["SERVER_NAME"] . "/assets/images/Powered_by_ProGroup.png";
-     $to   = 'mbouligny@progroup.us';
-    // $to   = 'victor.tolbert@gmail.com';
-
-     $bcc = $email_bcc;
-    // $bcc = 'victor.tolbert@gmail.com';
-
+    $progroup_img_path = "http://www." . $_SERVER["SERVER_NAME"] . "/assets/images/Powered_by_ProGroup.png";
+    $bcc = $email_bcc;
     $from = $email;
     $subject = "An ECCO request has been submitted";
 
     $headers = "From: " . strip_tags($from) . "\r\n";
+   // $headers .= 'Bcc: ' . $bcc . "\r\n";
+    $bcc='';
     $headers .= 'Bcc: ' . $bcc . "\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
@@ -280,8 +277,12 @@ unset($_SESSION['AttachmentUpload']);
         $message .= "</table>";
         $message .= "</body></html>";
 
-
-        mail($to, $subject, $message, $headers);
+	    mail('mbouligny@progroup.us', $subject, $message, $headers);
+		//mail('vanitha.m@vividinfotech.com', $subject, $message, $headers);
+		$cc_sql=mysql_query("SELECT `email` FROM `login_users` WHERE `user_level` LIKE '%\"1\"%'");
+		while($row_cc = mysql_fetch_array($cc_sql)) {
+		mail($row_cc['email'], $subject, $message, $headers);
+		}
  }
 ?>
 <script>

@@ -31,6 +31,7 @@ fields:
       suicide-prevention: Suicide Prevention
       genrx: GenRX
       admin: Admin
+      evaluation: Evaluation
   date:
     label: Published Date
     type: date

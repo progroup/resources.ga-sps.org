@@ -39,8 +39,30 @@
 <?php include_once('ecco/config.php');
 session_start();
 error_reporting(0);
+
+if(isset($_GET['docu'])){
+    $files = glob('content/resources/*',GLOB_BRACE);
+    foreach($files as $ls){
+        $select_file=glob($ls.'/{*.docx,*.pptx,*.pdf,*.mp4,*.doc,*.jpg,*.xlsx,*.ppt,*.xls,*.gif}',GLOB_BRACE);
+        if(count($select_file)>0) $select_filename=$select_file[0];
+        else $select_filename='';
+        $sql="SELECT id FROM documents WHERE document_name='".$select_filename."'";
+        $res_doc=mysql_query($sql);
+        $rows=mysql_fetch_array($res_doc);
+        if($rows['id']==0)
+        {
+            if ($select_filename <> '') {
+                $doc_in = "INSERT INTO documents(document_name) VALUES('" . $select_filename . "')";
+              mysql_query($doc_in);
+              //  echo $doc_in;
+            }
+        }
+    }
+    die;
+}
 #-------Report insert-----------
 if(isset($_POST['tta_reports'])){
+    ini_set('memory_limit', '-1');
     if(is_array($_SESSION['AttachmentUpload'])){
         $UploadFolderName_temp = array();
         $UploadFileName_temp = array();
@@ -54,8 +76,26 @@ if(isset($_POST['tta_reports'])){
         $UploadFolderName = "";
         $UploadFileName = "";
     }
-	
+
+ /*   echo "Agency: ".$_POST['report_agency'];
+    echo "Filename: ".$UploadFileName;
+    die;*/
+   // $UploadFileName = str_replace("'","&apos;",$UploadFileName);
    $agency_id= $_POST['report_agency'];
+    $sql_agency = mysql_query("SELECT name FROM agency WHERE id =".$_POST['report_agency']);
+    $agency_name_row=mysql_fetch_row($sql_agency);
+    $agencyname = $agency_name_row[0];
+    $timestamp = time();
+    $path_info = pathinfo($_SERVER['DOCUMENT_ROOT']."/assets/uploader/php-traditional-server/files/".$UploadFolderName_temp[0]."/".$UploadFileName_temp[0]);
+    $extension = $path_info['extension']; // "bill"
+    //$UploadFileName = str_replace("'","&apos;",$UploadFileName);
+    if(!empty($UploadFileName)){
+        //$UploadFileName = serialize($agencyname."_".$timestamp.".".$extension);
+        $fName = $agencyname."_".$timestamp.".".$extension;
+        $test = ["0"=>$fName];
+        $UploadFileName = serialize($test);
+    }
+  //  echo $UploadFileName;
     $SQL = "INSERT INTO TTA_Reports_uploads
     (agency, fname, lname, position, emailid, contact_no, report_note, uploadfoldername, uploadfilename,uploaduser)
     VALUES(
@@ -71,6 +111,11 @@ if(isset($_POST['tta_reports'])){
      )";
     $result = mysql_query($SQL);
     $insert_report_id=mysql_insert_id();
+    /*if( $result ){
+        echo "inserted ".$insert_report_id;
+    }else{
+        echo "not inserted";
+    }*/
 
     #------------REport Import---------------
 
@@ -78,6 +123,8 @@ if(isset($_POST['tta_reports'])){
     include 'Classes/PHPExcel/IOFactory.php';
     $inputFileName = $_SERVER['DOCUMENT_ROOT']."/assets/uploader/php-traditional-server/files/".$UploadFolderName_temp[0]."/".$UploadFileName_temp[0];
     //$inputFileName = $_SERVER['DOCUMENT_ROOT'].'/test.csv';
+     rename($inputFileName, $_SERVER['DOCUMENT_ROOT']."/assets/uploader/php-traditional-server/files/".$UploadFolderName_temp[0]."/".$agencyname."_".$timestamp.".".$extension);
+    $inputFileName = $_SERVER['DOCUMENT_ROOT']."/assets/uploader/php-traditional-server/files/".$UploadFolderName_temp[0]."/".$agencyname."_".$timestamp.".".$extension;
 
     try {
     $objPHPExcel = PHPExcel_IOFactory::load($inputFileName);
@@ -197,14 +244,17 @@ if(isset($_POST['tta_reports'])){
     #------------REport Import---------------
     if($insert_report_id)
     {
-        $inputFileName = "http://ga-sps.org/assets/uploader/php-traditional-server/files/".$UploadFolderName_temp[0]."/".$UploadFileName_temp[0];
+      /*  $inputFileName = "http://ga-sps.org/assets/uploader/php-traditional-server/files/".$UploadFolderName_temp[0]."/".$UploadFileName_temp[0];*/
+        $inputFileName = "http://ga-sps.org/assets/uploader/php-traditional-server/files/".$UploadFolderName_temp[0]."/".$agencyname."_".$timestamp.".".$extension;
+        $fName = $agencyname."_".$timestamp.".".$extension;
+
         $username=$_POST['report_fname'].' '.$_POST['report_lname'];
 
         $sql_agency = mysql_query("SELECT name FROM agency WHERE id =".$_POST['report_agency']);
         $agency_name_row=mysql_fetch_row($sql_agency);
         $agencyname = $agency_name_row[0];
 
-        @information_mail_admin($_POST['report_email'], $username, $agencyname, date('Y-m-d'),  $_POST['report_position'], $_POST['report_cnt_no'], $_POST['report_notes'], $inputFileName,$UploadFileName_temp[0],$agency_id);
+        @information_mail_admin($_POST['report_email'], $username, $agencyname, date('Y-m-d'),  $_POST['report_position'], $_POST['report_cnt_no'], $_POST['report_notes'], $inputFileName,$fName,$agency_id);
     }
 
 }
@@ -212,20 +262,13 @@ function information_mail_admin($email, $user_name, $agency, $time, $position, $
 
     $img_path = "http://www." . $_SERVER["SERVER_NAME"] . "/assets/images/logo-gasps.png";
     $progroup_img_path = "http://www." . $_SERVER["SERVER_NAME"] . "/assets/images/Powered_by_ProGroup.png";
-    $to   = 'mbouligny@progroup.us';
-    // $to   = 'victor.tolbert@gmail.com';
-    
-
-    $from = $email;
-    $subject = $agency." has upload an IP Report ";
-
     $message = '<html><body>';
     $message .= '<table width="100%" border="0"  cellpadding="10">';
     $message .= "<tr><td colspan=2 style='border: 1px solid #98002e; background-color: #ffffff; border-radius: 3px'><a href='http://ga-sps.org'><img src='".$img_path."' style='width:250px;' alt='Georgia Strategic Prevention System'/></a></td></tr>";
-    $message .= "<tr><td colspan=2><p>ECCO Report has been submitted by  <b>" . $agency . "</b></p>";
+    $message .= "<tr><td colspan=2><p>A report has been submitted to ECCO by <b>" . $agency . "</b></p>";
 
     if($uploadfilename){
-        $message .= "<p>The following report were uploaded :</p><ul style='margin:0;padding:0'>";
+        $message .= "<ul style='margin:0;padding:0'>";
 
             $message .=  '<li style="margin:0 0 0 20px;padding:0"><a href="'.$inputfile_withpath.'">' . $uploadfilename . '</a></li>';
         $message .= "</ul>";
@@ -244,10 +287,11 @@ function information_mail_admin($email, $user_name, $agency, $time, $position, $
     $message .= "<tr><td colspan=2 style='background:#000000'><img width='200px' height='56px' alt='Powered by the Prospectus Group' src='" . $progroup_img_path. "' style='width:200px;height::56px;background: #000000;'/></td></tr>";
     $message .= "</table>";
     $message .= "</body></html>";
+	
+	
     set_include_path(get_include_path() . PATH_SEPARATOR . 'ecco/');
     require 'mail/class.phpmailer.php';
-    $mail = new PHPMailer(true); //New instance, with exceptions enabled
-    $body  = $message;
+    $mail = new PHPMailer(true);
     $mail->IsSMTP();                               // tell the class to use SMTP
     $mail->SMTPAuth   = true;                      // enable SMTP authentication
     $mail->Port       = 25;                        // set the SMTP server port
@@ -255,20 +299,38 @@ function information_mail_admin($email, $user_name, $agency, $time, $position, $
     $mail->Username   = "vtestid11@gmail.com";     // SMTP server username
     $mail->Password   = "vivid123";                // SMTP server password
     $mail->IsSendmail();                           // tell the class to use Sendmail
-    $mail->AddReplyTo("mbouligny@progroup.us","Marcus");
-    $mail->From       = "mbouligny@progroup.us";
-    $mail->FromName   = "Marcus";
-
-    $bcc_sql=mysql_query("SELECT email,name FROM TTA_Forms T inner join login_users U on U.username=T.assignedUser WHERE agency_id=".$agency_id."  group by assignedUser ");
+//	$mail->Subject    = $agency." has upload an IP Report ";
+	$mail->Subject    = "A report has been uploaded by ".$agency;
+    $mail->WordWrap   = 80; // set word wrap
+    $mail->MsgHTML($message);
+    $mail->IsHTML(true); // send as HTML
+	/*$bcc_sql=mysql_query("SELECT email,name FROM TTA_Forms T inner join login_users U on U.username=T.assignedUser WHERE agency_id=".$agency_id."  group by assignedUser ");
     while($row_e = mysql_fetch_array($bcc_sql)) {
         $mail->AddBCC($row_e['email'], $row_e['name']);
-    }
-    $mail->AddAddress($to);
-    $mail->Subject    = $subject;
-    $mail->WordWrap   = 80; // set word wrap
-    $mail->MsgHTML($body);
-    $mail->IsHTML(true); // send as HTML
-    $mail->Send();
+    }*/
+	
+	$cc_sql=mysql_query("SELECT `email`,`name` FROM `login_users` WHERE `user_level` LIKE '%\"1\"%'");
+	while($row_cc = mysql_fetch_array($cc_sql)) {
+        if(!empty($row_cc['email'])){
+            $mail->AddAddress($row_cc['email']);
+            $mail->From       = $row_cc['email'];
+            $mail->FromName   = $row_cc['name'];
+            $mail->Send();
+        }
+		$mail->ClearAllRecipients();
+	}
+   $mail->AddAddress('mbouligny@progroup.us');
+   // $mail->AddAddress('vanitha.m@vividinfotech.com');
+    $mail->AddReplyTo('mbouligny@progroup.us', 'Marcus');
+    $mail->From       = 'mbouligny@progroup.us';
+    $mail->FromName   = 'Marcus';
+	$mail->Send();
+    
+	
+	/* $cc_sql=mysql_query("SELECT `email`,`name` FROM `login_users` WHERE `user_level` LIKE '%3%'");
+	while($row_cc = mysql_fetch_array($cc_sql)) {
+		$mail->AddBCC($row_cc['email'], $row_cc['name']);
+	} */
 }
 
 $_SESSION['AttachmentUpload'] = array();

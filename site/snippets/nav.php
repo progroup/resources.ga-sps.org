@@ -37,6 +37,12 @@
             <li>
               <a href="/about/contact"><i style="color: rgba(154, 0, 46, 1);">&bull;</i> Contact Information</a>
             </li>
+            <li>
+              <a href="/about/georgia-seow"><i style="color: rgba(154, 0, 46, 1);">&bull;</i> Georgia SEOW</a>
+            </li>
+            <li>
+              <a href="/faqs"><i style="color: rgba(154, 0, 46, 1);">&bull;</i> FAQs</a>
+            </li>
           </ul>
         </li>
         <li>
@@ -68,6 +74,9 @@
             </li>
             <li>
               <a href="/search?q=admin"><i style="color: rgba(154, 0, 46, 1);">&bull;</i> Admin</a>
+            </li>
+            <li>
+              <a href="/search?q=evaluation"><i style="color: rgba(154, 0, 46, 1);">&bull;</i> Evaluation</a>
             </li>
           </ul>
         </li>

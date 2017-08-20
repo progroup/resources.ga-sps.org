@@ -13,7 +13,7 @@ return function($site, $pages, $page) {
         $results = $site->search($query, array('words' => true))->visible();
         break;
       default:
-        $results = $site->find('posts')->search($query, array('words' => true))->visible();
+        $results = $site->find('resources')->search($query, array('words' => true))->visible();
         break;
     }
 

@@ -10,3 +10,9 @@ fields:
   text:
     label: Text
     type:  textarea
+  date:
+    label: Published Date
+    type: date
+    width: 1/2
+    format: Y-m-d
+    default: now

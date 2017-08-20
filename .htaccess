@@ -44,3 +44,13 @@ RewriteRule ^(.*) index.php [L]
 #
 # php_flag short_open_tag on
 Options -Indexes
+
+# Redirect old file path to new file path
+<IfModule mod_alias.c>
+
+Redirect 301 /help http://ecco.ga-sps.org/help.php
+Redirect 301 /learn http://ecco.ga-sps.org/help.php
+
+</IfModule>
+
+

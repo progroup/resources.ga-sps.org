@@ -5,70 +5,20 @@ Title: State Training
 Trainings: 
 
 - 
-  date: 'March 15, 2016 10am - 11:30am'
+  dates: 'June 20, 2017 10 - 11am'
   modality: Webinar
-  training: >
-    Sustainability 3.0 Part 2 with Greg
-    Puckett
-  description: >
-    Whether your coalition has a million
-    dollars in the bank or is barely getting
-    by on a “shoestring” budget, the
-    idea of more funds coming into your
-    coalition is an enticing one. Regardless
-    of where your coalition services are,
-    rural county or the urban core, you,
-    too, can be a fundraiser. How, you ask?
-    Because coalition fundraising is very
-    much about connecting the coalition’s
-    mission with the interests of potential
-    stakeholder organizations and people and
-    then building lasting relationships with
-    those stakeholders. Coalition staff and
-    members are natural “sellers” to
-    convince investors. . This webinar will
-    give an overview of the fundamentals of
-    fundraising and give insight as to your
-    coalition’s readiness for fundraising;
-    building an integrated fundraising plan;
-    and mobilizing members to implement the
-    plan.
+  training: Key Stakeholder Analysis Tool Overview
+  description: 'Key Stakeholder Analysis Tool Overview:'
   logistics: |
-    Webex Link:
-    https://meetings.webex.com/collabs/#/meetings/detail?uuid=MBL38OSFSKLANBJ7TC4RLB9J7O-TEX1&rnd=312446.54010
+    Key Stakeholder Analysis Review
+    Tue, Jun 20, 2017 10:00 AM - 11:00 AM EDT
     
-    Meeting Number:197 937 557
+    Please join my meeting from your computer, tablet or smartphone.
+    https://global.gotomeeting.com/join/798228261
     
-    +1-415-655-0001
-  ceus: 'false'
-  archived: 'true'
-- 
-  date: TBD (July 2016)
-  modality: Face to Face / Mandatory
-  training: Georgia Pitching Prevention Conference
-  description: 'Come join us for the inaugural Georgia Prevention Conference hosted by the Office of Behavioral Prevention. We will be meeting at the picturesque Callaway Gardens  to learn, celebrate and rally around prevention efforts in the state of Georgia.'
-  logistics: |
-    Online Registration Forthcoming
+    You can also dial in using your phone.
+    United States: +1 (872) 240-3212
     
-    Location: 17800 US Highway 27
-    Pine Mountain, GA  31822
-    
-    Website: http://www.callawaygardens.com
-    Directions: http://www.callawaygardens.com/about/getting-here
-  ceus: 'true'
-  archived: N/A
-- 
-  date: April 27, 2016 10am
-  modality: WebEx
-  training: >
-    Behavioral Health in Prevention
-    Overview...
-  description: 'This webinar accompanies a literature review of the current relationship between behavioral health promotion and substance abuse prevention.  In this webinar, Ben Gleason will focus on three blue ribbon papers that present a comprehensive view of the field.  As the product of a collaborative effort by some of the top minds in the field, each of these papers serves as a valuable source of additional information for direct service providers, administrators, and others.'
-  logistics: |
-    WebEx: 
-    Audio Connection: +1-415-655-0001
-    Meeting Number: 190 557 400
-    
-    https://meetings.webex.com/collabs/#/meetings/detail?uuid=M932CDCQW55D26ANQXEJWKWCEP-TEX1&rnd=516413.78366
-  ceus: 'true'
-  archived: 'true'
+    Access Code: 798-228-261
+  ceus: 'no'
+  archived: 'no'

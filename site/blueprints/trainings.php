@@ -13,7 +13,7 @@ fields:
     label: Training
     type: structure
     entry: >
-      <b>Date:</b> {{date}}<br>
+      <b>Dates:</b> {{dates}}<br>
       <b>Training:</b> {{training}}<br>
       <b>Modality:</b> {{modality}}<br>
       <b>CEUS:</b> {{ceus}}<br>
@@ -21,10 +21,9 @@ fields:
       <b>Description:</b><br> {{description}}<br>
       <b>Logistics:</b><br> {{logistics}}
     fields:
-      date:
-        label: Date
+      dates:
+        label: Training Dates
         type: text
-        width: 1/2
       modality:
         label: Modality
         type: text

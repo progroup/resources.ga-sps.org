@@ -8,9 +8,8 @@ From this page you can get updates on GASPS initiatives, learn about trainings a
 
 ## Add your event
 
-You can add your APP or GEN Rx public events here, i.e. Public Training, Health Fair, etc.
-Please click the link, complete the form, and allow at least 4 business days for posting. Keep in mind this is only
-for APP and GEN Rx public events. CPAW Meetings and other internal operations should not be posted.
+You can add your ASAPP or GEN Rx public events here, i.e. Public Training, Health Fair, etc.
+Please click the link, complete the form, and allow at least 4 business days for posting. Keep in mind this is only for ASAPP and GEN Rx public events. CPAW Meetings and other internal operations should not be posted.
 
 
 <a class="btn btn-default" href="https://creator.zoho.com/marc247/add-an-event-to-the-calendar-here-/form-perma/Add_an_event_to_the_calendar">Add an Event</a>

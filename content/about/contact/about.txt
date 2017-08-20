@@ -18,7 +18,7 @@ Office: 404.232.1251
 <Travis.Fretwell@dbhdd.ga.gov>
 
 __Donna Dent, MISM, MS, ICPS__
-Planning & Policy Development Spec/SPSF Coordinator
+Assistant Director Behavioral Health Prevention
 Office of Behavioral Health Prevention 
 Department of Behavioral Health and Developmental Disabilities 
 2 Peachtree Street NW, Suite 22-396
@@ -26,14 +26,23 @@ Atlanta, GA 30303
 Office Phone:  404.463.9780
 <Donna.Dent@dbhdd.ga.gov>
 
-__Mary Daise, MS__
-State Prevention Supervisor
+__Amy Benson, MS__
+SPF Coordinator
 Office of Behavioral Health Prevention 
 Department of Behavioral Health and Developmental Disabilities
-2 Peachtree Street NW, Suite 22-482
+2 Peachtree Street NW, Suite 22-493
 Atlanta, GA 30303
-Office:  404.232.1588
-<Mary.Basil@dbhdd.ga.gov>
+Office:  404.651.8450
+<Amy.Benson@dbhdd.ga.gov>
+
+__Nykia Greene-Young, MA__
+Regional Prevention Specialist Supervisor
+Office of Prevention Services and Programs
+Georgia Department of Behavioral Health and Developmental Disabilities
+2 Peachtree Street, NW, Suite 22-484
+Atlanta, GA 30303
+Office Phone:  404.463.6441
+<Nykia.Greene-Young@dbhdd.ga.gov>
 
 ****
 
@@ -43,7 +52,7 @@ Office:  404.232.1588
 
 __Brian K. Le, MPH__
 Regional Prevention Specialist
-Office of Behavioral Health Prevention 
+Office of Prevention Services and Programs
 Department of Behavioral Health and Developmental Disabilities
 2 Peachtree Street NW, Suite 22-486
 Atlanta, GA 30303
@@ -52,73 +61,58 @@ Office: 404.657.2165
 
 #### Region 2
 
-__Sheena Brown Berry__
+__Aliza Petiwala__
 Regional Prevention Specialist
-Office of Behavioral Health Prevention 
+Office of Prevention Services and Programs
 Department of Behavioral Health and Developmental Disabilities
-2 Peachtree Street NW, Suite 22-486
+2 Peachtree Street NW, Suite 22-485
 Atlanta, Georgia 30303
-Office: 404.657.2259 
-Work Cell: 770.314.4820
-<Shberry1@dhr.state.ga.us>	
+Office: 404.657.2134 
+<Aliza.petiwala@dbhdd.ga.gov>	
 
 #### Region 3	
 
-__Nykia Greene-Young, MA__
+__Arthur Cantu__
 Regional Prevention Specialist
-Office of Behavioral Health Prevention
-Georgia Department of Behavioral Health and Developmental Disabilities
-2 Peachtree Street, NW, Suite 22-484
-Atlanta, GA 30303
-Office Phone:  404.463.6441
-<Nykia.Greene-Young@dbhdd.ga.gov>
+Office of Prevention Services and Programs
+Department of Behavioral Health and Developmental Disabilities
+2 Peachtree Street NW, Suite 22-487
+Atlanta, Georgia 30303
+Office: 404.657.2362
+<Arthur.cantu@dbhdd.ga.gov>
 
 #### Region 4
 
-__Cathy Wendholt-McDade, MS__
+__Nia Sutton__
 Regional Prevention Specialist
-Office of Behavioral Health Prevention 
+Office of Prevention Services and Programs
 Department of Behavioral Health and Developmental Disabilities
-2 Peachtree Street NW Suite 22-497
+2 Peachtree Street NW Suite 22-484
 Atlanta, GA 30303
-Phone: 404.232-1582
-<Cathy.Wendholt-McDade@dbhdd.ga.gov>
+Phone: 404.657.2259
+<Nia.sutton@dbhdd.ga.gov>
 
 #### Region 5
 
-__Cathy Wendholt-McDade, MS__
+__Nia Sutton__
 Regional Prevention Specialist
-Office of Behavioral Health Prevention 
+Office of Prevention Services and Programs
 Department of Behavioral Health and Developmental Disabilities
-2 Peachtree Street NW Suite 22-497
+2 Peachtree Street NW Suite 22-484
 Atlanta, GA 30303
-Phone: 404.232-1582
-<Cathy.Wendholt-McDade@dbhdd.ga.gov>
+Phone: 404.657.2259
+<Nia.sutton@dbhdd.ga.gov>
 
 #### Region 6
 
 __Trese L. Flowers, MPH, ICPS__
 Regional Prevention Specialist
-Office of Behavioral Health Prevention 
+Office of Prevention Services and Programs
 Department of Behavioral Health and Developmental Disabilities 
 2 Peachtree Street, NW, Suite 22-494
 Atlanta, GA 30303
 Office:  404.657.5737
 <Trese.Flowers@dbhdd.ga.gov>
-
-****
-
-## Our Partners
-
-#### Prevention Advocacy
-
-__Brittney A. Newton, MPH__
-Voices for Prevention in GA Coordinator
-Cobb Alcohol Taskforce 
-3162 Johnson Ferry Rd, Ste 260
-Marietta, Georgia 30062
-Office: 404.747.2401
-<brittney@cobbat.org>
 
 ****
 
@@ -146,3 +140,13 @@ Program Assistant
 Atlanta, GA 30303
 Work Cell: 770.298.9768
 <morgan@progroup.us>
+
+****
+
+## Evaluation Team
+
+#### RTI
+
+RTI International
+3040 Cornwallis Road | 271D Hobbs Building
+Research Triangle Park, NC 27709
