@@ -22,3 +22,125 @@ Trainings:
     Access Code: 798-228-261
   ceus: 'no'
   archived: 'no'
+- 
+  dates: 'October 9, 2018- 8:15 AM – 4:30 PM'
+  modality: In-person Meeting
+  training: Sustainability
+  description: >
+    This training will address how to
+    develop and implement ongoing
+    sustainability plans for maintaining
+    prevention outcomes. Presenters will
+    discuss 1.) how to build long-term
+    partnerships with community organization
+    and institutions, and 2.) practical
+    solutions for building diverse financial
+    streams.
+  logistics: |
+    GSU Buckhead Center, Tower Place 200 | 3348 Peachtree Rd NE, Atlanta, GA 30326
+    The hotels nearest to Tower Place 200 are the Courtyard by Marriott and the Doubletree. Both hotels offer government and GSU rates. Attendees may want to ask about both rates and compare pricing.
+  ceus: ""
+  archived: ""
+- 
+  dates: 'October 10, 2018- 9:00 AM – 4:30 PM'
+  modality: In-Person Meeting
+  training: Tri-Ethnic Community Readiness Model
+  description: >
+    This training will take participants
+    through the process of conducting a
+    community readiness assessment.
+    Participants will learn how to
+    accurately capture community readiness,
+    and the importance of fidelity when
+    carrying out these assessments.
+  logistics: >
+    GSU Buckhead Center, Tower Place 200 |
+    3348 Peachtree Rd NE, Atlanta, GA 30326
+  ceus: ""
+  archived: ""
+- 
+  dates: TBD, 10:00 AM – 11:30 AM
+  modality: Webinar
+  training: Proposal/Technical Writing
+  description: 'This webinar will address the following objectives: 1.) using data to raise awareness and demonstrate need, 2.) formatting and proofing, and 3.) citing sources and avoiding unintentional plagiarism.'
+  logistics: ""
+  ceus: ""
+  archived: ""
+- 
+  dates: July 18, 2018, 10:00 AM to 11:00 AM
+  modality: Webinar
+  training: Ecco Clinic
+  description: |
+    TARGET AUDIENCE: ASAPP providers using the Ecco system to enter MDS data.
+    This webinar will allow ASAPP providers to come with questions they have concerning developing/editing their Intervention Profiles, entering monthly process data, or other challenges they may have navigating the Ecco system. Providers are encouraged to email their questions in advance to Fiana Thacker at fiana@progroup.us; however, questions posed during the webinar are also welcomed.
+  logistics: |
+    GoToMeeting
+    Please join my meeting from your computer, tablet or smartphone.
+    https://global.gotomeeting.com/join/391064077
+    You can also dial in using your phone.
+    United States: +1 (646) 749-3112
+    Access Code: 391-064-077
+    Joining from a video-conferencing room or system?
+    Dial: 67.217.95.2##391064077
+    Cisco devices: 391064077@67.217.95.2
+    First GoToMeeting? Let's do a quick system check:
+    https://link.gotomeeting.com/system-check
+  ceus: ""
+  archived: 'yes'
+- 
+  dates: October 9, 2018, 8:15 AM to 4:30 AM
+  modality: In-person
+  training: Sustainability
+  description: |
+    The purpose of the one-day training is to address the important role substance abuse prevention coalitions play in creating safe communities and to provide strategies for increasing the involvement of various segments of the community in prevention efforts and programs.
+    
+    Facilitator: Maxine Fuller
+  logistics: |
+    The hotels nearest to Tower Place 200 are the Courtyard by Marriott and the Doubletree. Both hotels offer government and GSU rates. All attendees qualify for both rates and may want to inquire about each and compare pricing.
+    
+    GSU Buckhead Center, Tower Place 200 | 3348 Peachtree Rd NE, Atlanta, GA 30326
+  ceus: ""
+  archived: 'no'
+- 
+  dates: August 15, 2018, 10:00 AM to 11:30 AM
+  modality: Webinar
+  training: Technical Writing
+  description: |
+    TARGET AUDIENCE: All ASAPP providers are encouraged to join. For those who are unable to attend the live webinar, a recorded version will be available on www.ga-sps.org.
+    
+    This webinar will provide helpful tips for report writing. The objectives include 1.) techniques for infusing data into reports, and 2.) methods for keeping writing concise and clear.
+    
+    Facilitator: Fiana Thacker
+  logistics: |
+    GoToMeeting
+    Please join my meeting from your computer, tablet or smartphone.
+    https://global.gotomeeting.com/join/137306045
+    You can also dial in using your phone.
+    United States: +1 (408) 650-3123
+    Access Code: 137-306-045
+    Joining from a video-conferencing room or system?
+    Dial: 67.217.95.2##137306045
+    Cisco devices: 137306045@67.217.95.2
+    First GoToMeeting? Let's do a quick system check:
+    https://link.gotomeeting.com/system-check
+  ceus: ""
+  archived: 'yes'
+- 
+  dates: October 10, 8:15 AM to 4:30 PM
+  modality: In-person
+  training: Tri-Ethnic Community Readiness Model
+  description: >
+    This training will take participants
+    through the process of conducting a
+    community readiness assessment.
+    Participants will learn how to
+    accurately capture community readiness,
+    and the importance of fidelity when
+    carrying out these assessments.
+  logistics: |
+    GSU Buckhead Center, Tower Place 200 | 3348 Peachtree Rd NE, Atlanta, GA 30326
+    FACILITATORS: Tiffiany Aholou
+    
+    The hotels nearest to Tower Place 200 are the Courtyard by Marriott and the Doubletree. Both hotels offer government and GSU rates. All attendees qualify for both rates and may want to inquire about each and compare pricing.
+  ceus: ""
+  archived: 'no'

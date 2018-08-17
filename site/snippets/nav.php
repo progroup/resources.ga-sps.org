@@ -40,9 +40,6 @@
             <li>
               <a href="/about/georgia-seow"><i style="color: rgba(154, 0, 46, 1);">&bull;</i> Georgia SEOW</a>
             </li>
-            <li>
-              <a href="/faqs"><i style="color: rgba(154, 0, 46, 1);">&bull;</i> FAQs</a>
-            </li>
           </ul>
         </li>
         <li>
@@ -83,6 +80,10 @@
         <li>
           <a href="/spf">SPF Overview</a>
         </li>
+        </li>
+        <li>
+          <a href="/faqs">FAQs</a>
+        </li>
       </ul>
       <div class="visible-xs-inline" style="margin-bottom: 2rem">
         <b>GA-SPS Data Centers:</b><br>
@@ -94,7 +95,7 @@
       </ul>
       <form class="navbar-form navbar-right" style="padding-right:0" role="search" action="<?php echo url('search') ?>">
         <div class="form-group">
-          <input name="q" type="search" placeholder="What resources can we help you find today?" class="form-control" style='width: 350px;border: 1px solid rgba(154, 0, 46, 1);'>
+          <input name="q" type="search" placeholder="What resources can we help you find today?" class="form-control" style='width: 290px;border: 1px solid rgba(154, 0, 46, 1);'>
         </div>
         <button type="submit" class="btn" style="background-color: rgba(154, 0, 46, 1);color: white">Search</button>
       </form>
