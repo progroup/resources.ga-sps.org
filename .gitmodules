@@ -7,3 +7,6 @@
 [submodule "site/plugins/classymarkdown"]
 	path = site/plugins/classymarkdown
 	url = https://github.com/fabianmichael/kirby-classymarkdown.git
+[submodule "site/plugins/algolia"]
+	path = site/plugins/algolia
+	url = https://github.com/getkirby-plugins/algolia-plugin.git
